@@ -1,4 +1,4 @@
-requests
-twilio
-uagents
-flask
+Flask==2.2.3
+requests==2.28.1
+twilio==7.16.2
+uagents==0.1.3
