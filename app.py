@@ -12,6 +12,7 @@ import yfinance as yf
 import pandas as pd
 import plotly.graph_objects as go
 import warnings
+import os
 
 # Suppress warnings
 warnings.filterwarnings('ignore')
@@ -81,6 +82,8 @@ iface = gr.Interface(
     theme=gr.themes.Soft()  # Optional theme for better visuals
 )
 
+port = int(os.environ.get('PORT', 7860))
+
 # Launch the app
 if __name__ == "__main__":
-    iface.launch()
+    iface.launch(server_name="0.0.0.0", server_port=port)
