@@ -1,0 +1,4 @@
+gradio
+yfinance
+pandas
+plotly
